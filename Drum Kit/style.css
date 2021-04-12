@@ -38,5 +38,14 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border: 1px solid black;
+  -webkit-transition: all .07s;
+  transition: all .07s;
+}
+
+.keys .key.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: red;
 }
 /*# sourceMappingURL=style.css.map */
