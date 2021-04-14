@@ -54,5 +54,9 @@ body {
   top: 50%;
   -webkit-transform-origin: 100%;
           transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) all 0.6s;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) all 0.6s;
 }
 /*# sourceMappingURL=style.css.map */
