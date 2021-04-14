@@ -29,7 +29,5 @@ setInterval(function sayHi(){
         minuteHand.style.transitionDuration = '0.05s';
         hourHand.style.transitionDuration = '0.05s';
     }
-
-    // console.log(seconds);
 },1000)
 
