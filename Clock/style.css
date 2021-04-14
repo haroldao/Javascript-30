@@ -58,5 +58,18 @@ body {
           transform: rotate(90deg);
   -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) all 0.06s;
   transition: cubic-bezier(0.215, 0.61, 0.355, 1) all 0.06s;
+  border-radius: 100px;
+}
+
+.clock .clock-face .hand.second-hand {
+  background: red;
+}
+
+.clock .clock-face .hand.min-hand {
+  background: orange;
+}
+
+.clock .clock-face .hand.hour-hand {
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */

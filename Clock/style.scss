@@ -45,6 +45,16 @@ body{
             transform-origin: 100%;
             transform: rotate(90deg);
             transition: cubic-bezier(0.215, 0.610, 0.355, 1) all .06s;
+            border-radius: 100px;
+            &.second-hand{
+                background: red;
+            }
+            &.min-hand{
+                background: orange;
+            }
+            &.hour-hand{
+                background: green;
+            }
         }
     }
 }
