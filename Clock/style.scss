@@ -3,7 +3,11 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    font-size: 62.5%;
 }
+
+$color-1: black;
+$color-2: white;
 
 *, *::after, *::before{
     box-sizing: border-box;
@@ -12,6 +16,7 @@ body{
 }
 
 body{
+    background-color: $color-1;
     min-height: 100vh;
     display: flex;
     flex: 1;
@@ -19,9 +24,24 @@ body{
     justify-content: center;
 }
 .clock{
-    background-color: blue;
+    // background-color: blue;
     width: 30rem;
     height: 30rem;
-    border: solid 20px red;
+    border: solid 1.4rem $color-2;
     border-radius: 50%;
+    position: relative;
+
+    .clock-face{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-3px);
+        .hand{
+            width: 50%;
+            height: 6px;
+            background: $color-2;
+            position: absolute;
+            top: 50%;
+        }
+    }
 }
