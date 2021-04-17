@@ -1,6 +1,6 @@
-html, body{
-    font-size: 62.5%; /*So by default, your font-size is 10px instead of 16px*/
-}
+/* html, body{
+    font-size: 62.5%;
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -31,7 +31,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
 }
 
