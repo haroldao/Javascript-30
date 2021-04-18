@@ -7,7 +7,7 @@ body{
     text-align: center;
 }
 img{
-    padding: var(--spacing);
+    padding: 10px var(--spacing) 10px;
     background: var(--base);
     filter: blur(var(--blur));
 }

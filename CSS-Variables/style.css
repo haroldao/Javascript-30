@@ -9,7 +9,7 @@ body {
 }
 
 img {
-  padding: var(--spacing);
+  padding: 10px var(--spacing) 10px;
   background: var(--base);
   -webkit-filter: blur(var(--blur));
           filter: blur(var(--blur));
