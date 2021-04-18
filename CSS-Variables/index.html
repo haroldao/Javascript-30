@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables</title>
     <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="/CSS-Variables/style.css">
 </head>
 <body>
-    <h1>Update CSS Variables with JS</h1>
+    <h1>Update CSS Variables with <span>JS</span></h1>
     <div class="controls">
-        <label for="spacing">Spacing:</label>
-        <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
-
-        <label for="blur">Blur:</label>
-        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
-
-        <label for="base">Base Color:</label>
-        <input type="color" id="base" name="base" value="#ffc600">
+        <div class="spacing">
+            <label for="spacing">Spacing:</label>
+            <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">   
+        </div>
+        
+        <div class="blur">
+            <label for="blur">Blur:</label>
+            <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
+        </div>
+        
+        <div class="color">
+            <label for="base">Base Color:</label>
+            <input type="color" id="base" name="base" value="#ffc600">
+        </div>
     </div>
-
     <img src="https://source.unsplash.com/random/600x500" alt="" srcset="https://source.unsplash.com/random/600x500">
+
+    <script src="/CSS-Variables/index.js"></script>
 </body>
 </html>

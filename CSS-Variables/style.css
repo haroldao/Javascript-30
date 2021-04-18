@@ -1,0 +1,21 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  text-align: center;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+}
+
+h1 span {
+  color: var(--base);
+}
+/*# sourceMappingURL=style.css.map */
