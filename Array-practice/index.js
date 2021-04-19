@@ -63,6 +63,8 @@ console.table(oldest);
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+
+// ↘ Copy-paste this code on the Javascript console (with the link mentioned above)
 var category = document.querySelector(".mw-category");
     links = [...category.querySelectorAll("a")];
     de = links
