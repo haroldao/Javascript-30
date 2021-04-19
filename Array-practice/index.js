@@ -83,8 +83,21 @@ const alpha = people.sort((lastOne, nextOne) => {
     return aLast > bLast ? 1 : -1;
 });
 
-console.log(alpha)
+console.log(alpha);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+
+const counted = data.reduce(function (allNames, data) {
+    if (data in allNames) {
+      allNames[data]++
+    }
+    else {
+      allNames[data] = 1
+    }
+    return allNames
+}, {});
+
+console.log(counted);
