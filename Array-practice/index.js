@@ -65,15 +65,25 @@ console.table(oldest);
 
 
 // ↘ Copy-paste this code on the Javascript console (with the link mentioned above)
-var category = document.querySelector(".mw-category");
-    links = [...category.querySelectorAll("a")];
-    de = links
-            .map(link => link.textContent)
-            .filter(streetName => streetName.includes("de"))
+// var category = document.querySelector(".mw-category");
+//     links = [...category.querySelectorAll("a")];
+//     de = links
+//             .map(link => link.textContent)
+//             .filter(streetName => streetName.includes("de"))
 
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
+const alpha = people.sort((lastOne, nextOne) => {
+    // console.log(nextOne)
+    // console.log(lastOne)
+    const [aLast, aFirst] = lastOne.split(', '); 
+    const [bLast, bFirst] = nextOne.split(', '); 
+    return aLast > bLast ? 1 : -1;
+});
+
+console.log(alpha)
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
